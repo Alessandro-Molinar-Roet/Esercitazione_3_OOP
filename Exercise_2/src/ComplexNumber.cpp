@@ -42,7 +42,7 @@ ComplexNumber operator+(const ComplexNumber &c1,const ComplexNumber &c2)
 
 bool operator == (const ComplexNumber &c1, const ComplexNumber &c2)
 {
-    double tol = 10e-300; //tolleranza fisata
+    double tol = 10e-300; //tolleranza fissata
     double real_diff = abs(c1.real-c2.real);
     double imag_diff = abs(c1.imaginary-c2.imaginary);
     if(real_diff <= tol && imag_diff <= tol)
